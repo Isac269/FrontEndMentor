@@ -1,0 +1,102 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  /* Primary */
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 360px;
+  padding: 50px 25px 30px;
+  display: block;
+  background-color: var(--White);
+  border-radius: 20px 20px 70px 20px;
+}
+
+#form-age {
+  display: flex;
+  gap: 13px;
+  letter-spacing: 2px;
+  justify-content: center;
+  margin: 0 0 28px;
+}
+
+label {
+  color: var(--Smokey-grey);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 1.8px solid var(--Light-grey);
+  border-radius: 8px;
+  padding: 14px;
+  outline: 0;
+  font-size: 25px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.insert {
+  width: 100%;
+}
+
+#button {
+  position: relative;
+  margin: 70px 0 50px;
+  border: 1px solid red;
+}
+
+#button button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--Purple) url(./assets/images/icon-arrow.svg) no-repeat
+    center/30px;
+  border: 1px solid var(--Purple);
+  position: absolute;
+  z-index: 1;
+  right: 40%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+}
+
+#button button:hover {
+  outline: 1.5px solid var(--Purple);
+}
+
+#line {
+  display: block;
+  border: 1.8px solid var(--Light-grey);
+}
+
+#result {
+  border: 1px solid red;
+}
